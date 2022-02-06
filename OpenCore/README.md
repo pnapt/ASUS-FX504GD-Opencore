@@ -25,8 +25,8 @@ SMbios MacbookPro15,2
 **How-to Install Combojack switcher**
 - Put Combojack folder in user/youraccountname first
 
-```bash install.sh 
-```
+```bash install.sh ```
+
 - then follow the prompt (VerbStub.kext already include in EFI)
 - restart
 - Try plug-in your headphone If you get prompt , Then patch is working
