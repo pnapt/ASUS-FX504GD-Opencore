@@ -1,8 +1,8 @@
 # OC Config.plist
 
-> Base on 
-   https://github.com/PoomSmart/ASUS-FX504GE-Hackintosh/blob/master/OpenCore/README.md
-   https://github.com/RobyRew/ASUS-FX504GE-Hackintosh_OpenCore/blob/master/Docs/config.plist.md
+- Base on 
+   - https://github.com/PoomSmart/ASUS-FX504GE-Hackintosh/blob/master/OpenCore/README.md
+   - https://github.com/RobyRew/ASUS-FX504GE-Hackintosh_OpenCore/blob/master/Docs/config.plist.md
 
 ## ACPI
 ### Add
@@ -53,11 +53,11 @@
 | framebuffer-con1-type | DATA | 00080000 | HDMI fix |
 
 - or you can add
-`framebuffer-stolenmem`
+   - `framebuffer-stolenmem`
 
-`framebuffer-fbmem`
+   - `framebuffer-fbmem`
 
-`framebuffer-unifiedmem (not recommend)`
+   - `framebuffer-unifiedmem (not recommend)`
 
 - more info on https://github.com/acidanthera/WhateverGreen
 
