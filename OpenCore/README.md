@@ -17,6 +17,7 @@ PS : ***This not cover all the topic you should go read on dortania guide to und
 
 **What need to be done after install macos**
 1. generate you own SMBIOS (This config use `MacbookPro15,2` SMBIOS ) 
+
 // PS.If you change to something else you need to change in USBMap.kext too
 2. install Combojack Switcher https://github.com/hackintosh-stuff/ComboJack
 
