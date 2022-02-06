@@ -20,7 +20,7 @@ SMbios MacbookPro15,2
 3. ProperTree https://github.com/corpnewt/ProperTree
 
 **What need to be done after install macos**
-1. generate you own SMBIOS
+1. generate you own SMBIOS (This config use `MacbookPro15,2` SMBIOS //PS.If you change to something else you need to change in USBMapkext too)
 2. install Combojack Switcher https://github.com/hackintosh-stuff/ComboJack
 
 **How-to Install Combojack switcher**
@@ -33,7 +33,7 @@ SMbios MacbookPro15,2
 - Try plug-in your headphone If you get prompt , Then patch is working
 
 **Nice tools that should try**
-OCAuxiliaryTools https://github.com/ic005k/OCAuxiliaryTools
+- OCAuxiliaryTools https://github.com/ic005k/OCAuxiliaryTools
 
 **Misc Fixes**
 - Fix Dualboot timezone: https://www.tonymacx86.com/threads/fix-incorrect-time-in-windows-osx-dual-boot.133719/
