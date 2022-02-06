@@ -1,7 +1,7 @@
 # ASUS-FX504GD-Opencore
 my config of opencore to get macOS to boot on FX504 Laptop model
 
-# How to guide
+# How-to guide
 
 [Here](OpenCore/README.md)
 
