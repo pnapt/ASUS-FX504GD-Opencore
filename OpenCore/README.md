@@ -16,13 +16,14 @@ PS : ***This not cover all the topic you should go read on dortania guide to und
 3. ProperTree https://github.com/corpnewt/ProperTree
 
 **What need to be done after install macos**
-1. generate you own SMBIOS (This config use `MacbookPro15,2` SMBIOS ) 
+1. Generate you own SMBIOS (This config use `MacbookPro15,2` SMBIOS ) 
 
 - Notes :If you change to something else you need to change in USBMap.kext too
 
-2. install Combojack Switcher https://github.com/hackintosh-stuff/ComboJack
+2. Install Combojack Switcher https://github.com/hackintosh-stuff/ComboJack
 
 **How-to Install Combojack switcher**
+- OR Follow instruction on [Here](https://github.com/hackintosh-stuff/ComboJack)
 - Put Combojack folder in user/youraccountname first or cd combojack folder
 
 - Open Terminal Type : ```bash install.sh ```
