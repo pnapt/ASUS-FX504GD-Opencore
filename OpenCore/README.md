@@ -23,8 +23,13 @@ PS : ***This not cover all the topic you should go read on dortania guide to und
 2. Install Combojack Switcher https://github.com/hackintosh-stuff/ComboJack
 
 **How-to Install Combojack switcher**
-- OR Follow instruction on [Here](https://github.com/hackintosh-stuff/ComboJack)
-- Put Combojack folder in user/youraccountname first or cd combojack folder
+- Follow Full instruction on [Here](https://github.com/hackintosh-stuff/ComboJack)
+
+- This is short-cut version
+
+- Download This [Repo](https://github.com/hackintosh-stuff/ComboJack)
+
+- Put Combojack folder in user/youraccountname first or cd combojack folder in Terminal
 
 - Open Terminal Type : ```bash install.sh ```
 
