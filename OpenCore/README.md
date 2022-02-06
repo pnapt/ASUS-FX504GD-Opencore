@@ -22,11 +22,13 @@ SMbios MacbookPro15,2
 2. install Combojack Switcher https://github.com/hackintosh-stuff/ComboJack
 
 **How-to Install Combojack switcher**
-Put Combojack folder in user/youraccountname first
-```bash install.sh ```
-then follow the prompt (VerbStub.kext already include in EFI)
-restart
-Try plug-in your headphone If you get prompt , Then patch is working
+- Put Combojack folder in user/youraccountname first
+
+```bash install.sh 
+```
+- then follow the prompt (VerbStub.kext already include in EFI)
+- restart
+- Try plug-in your headphone If you get prompt , Then patch is working
 
 **Nice tools that should try**
 OCAuxiliaryTools https://github.com/ic005k/OCAuxiliaryTools
