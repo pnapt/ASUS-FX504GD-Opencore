@@ -7,10 +7,6 @@ PS : ***This not cover all the topic you should go read on dortania guide more t
 
 - **Dortania guide coffee-lake(8th gen) : https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html**
 
-
-## Opencore config setups
-SMbios MacbookPro15,2
-
 # Post-Install
 **Details Info on : https://dortania.github.io/OpenCore-Post-Install/**
 
