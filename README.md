@@ -86,16 +86,16 @@ __People who made opencore project and kext__
 
 __Previous People who build EFI for this laptop__
 - **Special Thanks to**
-- https://github.com/PoomSmart for guide fx504 
+    - https://github.com/PoomSmart for guide fx504 
     Repo:https://github.com/PoomSmart/ASUS-FX504GE-Hackintosh
-
-- https://github.com/wilsomwong for EFI
+- And 
+    - https://github.com/wilsomwong
     Repo:https://github.com/wilsomwong/Asus-TUF-FX504GE-Hackintosh
 
-- https://github.com/RobyRew for EFI
+    - https://github.com/RobyRew
     Repo:https://github.com/RobyRew/ASUS-FX504GE-Hackintosh_OpenCore
 
-- https://github.com/dongcodebmt for way to fix combojack alc 255
+    - https://github.com/dongcodebmt for way to fix combojack alc 255
     Repo:https://github.com/dongcodebmt/VX5-591G-OpenCore
 
-- r/hackintosh Community
+- r/hackintosh Community https://www.reddit.com/r/hackintosh/ 
