@@ -23,9 +23,9 @@ SMbios MacbookPro15,2
 2. install Combojack Switcher https://github.com/hackintosh-stuff/ComboJack
 
 **How-to Install Combojack switcher**
-- Put Combojack folder in user/youraccountname first
+- Put Combojack folder in user/youraccountname first or cd combojack folder
 
-```bash install.sh ```
+- Open Terminal Type : ```bash install.sh ```
 
 - then follow the prompt (VerbStub.kext already include in EFI)
 - restart
@@ -35,4 +35,4 @@ SMbios MacbookPro15,2
 OCAuxiliaryTools https://github.com/ic005k/OCAuxiliaryTools
 
 **Misc Fixes**
-- Fix Dualboot timezone: https://www.tonymacx86.com/threads/fix-incorrect-time-in-windows-osx-dual-boot.133719/  
+- Fix Dualboot timezone: https://www.tonymacx86.com/threads/fix-incorrect-time-in-windows-osx-dual-boot.133719/
