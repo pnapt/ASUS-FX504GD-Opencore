@@ -1,6 +1,6 @@
 # Config.plist setup
-## ***This not cover all the topic you should go read on dortania guide more to understand it***
-### [Here](ConfigExplain.md)
+PS : ***This not cover all the topic you should go read on dortania guide more to understand it***
+## [Here](ConfigExplain.md)
 
 - **More Details on dortania guide : https://dortania.github.io/OpenCore-Install-Guide**
 
