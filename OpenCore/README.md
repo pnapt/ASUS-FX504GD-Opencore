@@ -2,8 +2,9 @@
 ***This not cover all the topic you should go read on dortania guide more to understand it***
 [Here](ConfigExplain.md)
 
-**More Details on dortania guide : https://dortania.github.io/OpenCore-Install-Guide/  
-**Dortania guide coffee-lake(8th gen) : https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html**
+- **More Details on dortania guide : https://dortania.github.io/OpenCore-Install-Guide/  **
+
+- **Dortania guide coffee-lake(8th gen) : https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html**
 
 
 ## Opencore config setups
