@@ -52,13 +52,14 @@
 | framebuffer-con1-enable | DATA | 01000000 | HDMI fix |
 | framebuffer-con1-type | DATA | 00080000 | HDMI fix |
 
-or you can add
-framebuffer-stolenmem
-framebuffer-fbmem
-framebuffer-unifiedmem (not recommend)
+- or you can add
+`framebuffer-stolenmem`
 
-more info on https://github.com/acidanthera/WhateverGreen
+`framebuffer-fbmem`
 
+`framebuffer-unifiedmem (not recommend)`
+
+- more info on https://github.com/acidanthera/WhateverGreen
 
 ### Delete
 -
@@ -67,8 +68,10 @@ more info on https://github.com/acidanthera/WhateverGreen
 ### Add
 OC Snapshot > OC Clean Snapshot
 Make sure
-VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext is Enable
-VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext is Disable
+- VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext is Enable
+
+- VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext is Disable
+
 ### Block
 -
 
@@ -76,7 +79,7 @@ VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext is Disable
 -
 
 ### Force
-We need to force `IO80211Family.kext` from `System/Library/Extensions` to have complete support of Airportitlwm.kext for WiFi.
+force `IO80211Family.kext` from `System/Library/Extensions` to have complete support for WiFi
 
 ### Patch
 -
@@ -101,16 +104,16 @@ We need to force `IO80211Family.kext` from `System/Library/Extensions` to have c
 
 ## Misc
 ### Boot
-1.PickerAttributes 17
-More info full guide
+1. `PickerAttributes 17`
+look for more info in dortania guide.
 
 ### Debug
 **Enabled:**
-`ApplePainc`
-`DisableWatchDog`
+1. `ApplePainc`
+2. `DisableWatchDog`
 
 **Disable**
-`AppleDebug`
+1. `AppleDebug` We dont need debug.
 
 ### Entries
 -
@@ -140,9 +143,8 @@ Remove from `EFI/OC/Tools` everything
 **What each thing does:**
 - `boot-args` (Boot Arguments)
    - `-v keepsyms=1 debug=0x100` (Debuging)
-   - `alcid=3` (Sets de audio to port 3)
+   - `alcid=31` (Sets de audio to port 31)
    - `-wegnoegpu` (Disable dGPU )
-   - `-igfxnohdmi` ()
    - `-igfxblr` (Fix Backlight issue on Coffe Lake laptops)
    - `agdpmod=vit9696` (Disable board-id checker **ESSENTIAL FOR HDMI OUTPUT**)
 - `run-efi-updater` (Disable macOS updates to EFI)
@@ -156,7 +158,6 @@ Ignore
 Ignore, we have native NVRAM
 
 ### WriteFlash `Enable`
-
 
 ## PlatformInfo
 ### Automatic `enabled`
