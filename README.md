@@ -72,6 +72,10 @@ __My laptop issue__
 
 [Here](OpenCore/README.md)
 
+# Benchmark Info
+
+[Here](OpenCore/BenchmarkInfo.md)
+
 # Credit
 __People who made opencore project and kext__
 - https://github.com/acidanthera/ for Opencore
