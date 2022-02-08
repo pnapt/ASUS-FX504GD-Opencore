@@ -6,6 +6,15 @@
 ## ***always lookout on dortania guide first (If They have an update)***
 https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html#starting-point
 
+
+Updated to 0.7.8 Release  by Using OC Auxiliary Tool 
+Updated Kext
+ Lilu 1.5.9 to 1.6.0
+ WhateverGreen 1.5.6 to 1.5.7
+ AppleALC 1.6.8 to 1.6.9 
+IntelBluetooth Firmware 2.0.1 to 2.1.0
+UpdateSMBIOSMode set to Create
+
 # OC Config.plist
 ## This currently cover on OpenCore 0.7.7
 ## ACPI
