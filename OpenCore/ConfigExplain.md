@@ -75,12 +75,18 @@
 
 ## Kernel
 ### Add
-OC Snapshot > OC Clean Snapshot
-Make sure
+**Kext Order**
+- OC Snapshot > OC Clean Snapshot
+
+- Order
+   - Lilu must come first
+   - Then VirtualSMC,WhateverGreen,AppleALC etc.
+
+**Make sure**
 - VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext is Enable
 
 - VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext is Disable
-
+- 
 ### Block
 -
 
