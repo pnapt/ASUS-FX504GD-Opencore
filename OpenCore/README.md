@@ -1,32 +1,38 @@
-# How to create/setup config.plist
-
-## **[ConfigExplain.md](ConfigExplain.md)**
+# Guide&Info
+Information will be here
+## How to create/setup config.plist
+### **[Here](ConfigExplain.md)**
 
 - PS : ***This not cover all the topic you should go read on dortania guide to understand it more***
-
  - **More Details on dortania guide : https://dortania.github.io/OpenCore-Install-Guide**
 
  - **Dortania guide coffee-lake(8th gen) : https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html**
 
-# BIOS Settings
+### SSDT
+- [SSDTTime](https://github.com/corpnewt/SSDTTime)
+### USBMap Kext
+- [USBMap](https://github.com/corpnewt/USBMap)
+- This laptop config [COMING SOON](USBMapExplain.md)
+
+# Necessary Apps
+1. [MountEFI](https://github.com/corpnewt/MountEFI)
+2. [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)
+3. [ProperTree](https://github.com/corpnewt/ProperTree)
+
+# Installation
+## USB Install
+- [Here](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/)
+
+## BIOS Settings
 1. Secure Boot: Disabled
 2. Fastboot : Disable
 2. SATA mode: AHCI
 3. DVMT-Preallocated: 64MB
 
-# How to make a patch (Explanation)
-## USBMap.kext setup
-### [COMING SOON](USBMapExplain.md)
-
 # Post-Install
-**Details Info on : https://dortania.github.io/OpenCore-Post-Install/**
+- **Details Info on : https://dortania.github.io/OpenCore-Post-Install/**
 
-**Necessary Apps**
-1. MountEFI https://github.com/corpnewt/MountEFI
-2. GenSMBIOS https://github.com/corpnewt/GenSMBIOS
-3. ProperTree https://github.com/corpnewt/ProperTree
-
-**What need to be done after install macos**
+- **What need to be done after install macos**
 1. Generate you own SMBIOS (This config use `MacbookPro15,2` SMBIOS ) 
 
 - Notes :If you change to something else you need to change in USBMap.kext too
@@ -40,7 +46,7 @@
 
   - Download This [Repo](https://github.com/hackintosh-stuff/ComboJack)
 
-  - 1. Open Terminal Type : ````cd /ComboJack/ComboJack_Installer/```
+  - 1. Open Terminal Type : ```cd /ComboJack/ComboJack_Installer/```
 
   - 2. Type : ```bash install.sh ```
 
