@@ -1,12 +1,11 @@
-# Config.plist setup
-**[Here](ConfigExplain.md)**
+# How to create/setup config.plist
+- **[Here](ConfigExplain.md)**
 
-PS : ***This not cover all the topic you should go read on dortania guide to understand it more***
+- PS : ***This not cover all the topic you should go read on dortania guide to understand it more***
 
+ - **More Details on dortania guide : https://dortania.github.io/OpenCore-Install-Guide**
 
-- **More Details on dortania guide : https://dortania.github.io/OpenCore-Install-Guide**
-
-- **Dortania guide coffee-lake(8th gen) : https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html**
+ - **Dortania guide coffee-lake(8th gen) : https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html**
 
 # BIOS Settings
 1. Secure Boot: Disabled
@@ -14,9 +13,9 @@ PS : ***This not cover all the topic you should go read on dortania guide to und
 2. SATA mode: AHCI
 3. DVMT-Preallocated: 64MB
 
-# Patch
+# How to make a patch (Explanation)
 ## USBMap.kext setup
-### [COMMING SOON](USBMapExplain.md)
+### [COMING SOON](USBMapExplain.md)
 
 # Post-Install
 **Details Info on : https://dortania.github.io/OpenCore-Post-Install/**
