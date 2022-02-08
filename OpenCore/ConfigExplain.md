@@ -10,16 +10,16 @@ https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lak
 
 
 # OC Config.plist
-## This currently cover on OpenCore 0.7.7
+## This currently cover on OpenCore 0.7.8
 ## ACPI
 ### Add
-1. `SSDT-ALS0.aml` Ambient light(Maybe not needed)
+1. `SSDT-ALS0.aml` Ambient light (Maybe not needed)
 2. `SSDT-AWAC.aml` 300 Series RTC
 3. `SSDT-dGPU-Off.aml` dGPU disable
 4. `SSDT-EC-USBX-LAPTOP.aml` Embedded controller and USB power
-5. `SSDT-HPET.aml` Generate from ssdt time
+5. `SSDT-HPET.aml` Generate from ssdt time (Maybe not needed)
 6. `SSDT-PLUG-DRTNIA.aml` CPU power management 
-7. `SSDT-PMC` Shutdown Fix
+7. `SSDT-PMC` Enable native nvram for 300-series & Shutdown Fix
 8. `SSDT-PNLF.aml` Backlight Fix
 9. `SSDT-SBUS.aml`SMBus support
 10. `SSDT-XOSI.aml` Trackpad Fix
@@ -51,21 +51,27 @@ https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lak
 | disable-external-gpu | DATA | 01000000 | or use -wegnoegpu (disable eGPU)|
 | enable-backlight-registers-fix | DATA | 01000000 | or use -igfxblr (Blacklight Fix)|
 | enable-backlight-smoother | DATA | 01000000 | or use -igfxbls (make brightness adjust smoother)|
-| framebuffer-patch-enable | DATA | 01000000 | framebuffer-patch-enable |
+| enable-hdmi-dividers-fix| DATA | 01000000 | HDMI fix |
+| enable-hdmi20 | DATA | 01000000 | HDMI fix |
+| enable-lspcon-support | DATA | 01000000 | HDMI fix |
 | framebuffer-con0-enable | DATA | 01000000 | internal display |
 | framebuffer-con0-type | DATA | 02000000 | internal display |
 | framebuffer-con1-alldata | DATA | 0101090000080000C7010000 | HDMI fix |
 | framebuffer-con1-enable | DATA | 01000000 | HDMI fix |
+| framebuffer-con1-has-lspcon | DATA | 00080000 | HDMI fix |
+| framebuffer-con1-preferred-lspcon-mode | DATA | 00080000 | HDMI fix |
 | framebuffer-con1-type | DATA | 00080000 | HDMI fix |
+| framebuffer-patch-enable | DATA | 01000000 | framebuffer-patch-enable |
 
-- or you can add
+- you can add if you want to increase VRAM
+   
    - `framebuffer-stolenmem`
 
    - `framebuffer-fbmem`
 
    - `framebuffer-unifiedmem (not recommend)`
 
-- more info on https://github.com/acidanthera/WhateverGreen
+- More info on https://github.com/acidanthera/WhateverGreen
 
 ### Delete
 -
@@ -170,8 +176,7 @@ Ignore, we have native NVRAM
 ### Automatic `enabled`
 
 ### Generic
-#### Download [GenSMBIOS (opens new window)](https://github.com/corpnewt/GenSMBIOS) 
-and open the *GenSMBIOS.command* with *Right-Click > Open*, follow the intructions on the Terminal Window.
+#### Download [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) 
 
 | Generic | Dictionary | Keys / Values |
 |:--- |:---:|:--- |
