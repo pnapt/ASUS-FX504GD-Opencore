@@ -86,7 +86,7 @@
 - VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext is Enable
 
 - VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext is Disable
-- 
+
 ### Block
 -
 
