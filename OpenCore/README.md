@@ -1,5 +1,6 @@
 # How to create/setup config.plist
-- **[Here](ConfigExplain.md)**
+
+## **[ConfigExplain.md](ConfigExplain.md)**
 
 - PS : ***This not cover all the topic you should go read on dortania guide to understand it more***
 
