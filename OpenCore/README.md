@@ -7,6 +7,9 @@ PS : ***This not cover all the topic you should go read on dortania guide to und
 
 - **Dortania guide coffee-lake(8th gen) : https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html**
 
+# USBMap.kext setup
+## [COMMING SOON](USBMapExplain.md)
+
 # Post-Install
 **Details Info on : https://dortania.github.io/OpenCore-Post-Install/**
 
