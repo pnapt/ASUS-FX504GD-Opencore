@@ -7,13 +7,7 @@
 https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html#starting-point
 
 
-Updated to 0.7.8 Release  by Using OC Auxiliary Tool 
-Updated Kext
- Lilu 1.5.9 to 1.6.0
- WhateverGreen 1.5.6 to 1.5.7
- AppleALC 1.6.8 to 1.6.9 
-IntelBluetooth Firmware 2.0.1 to 2.1.0
-UpdateSMBIOSMode set to Create
+
 
 # OC Config.plist
 ## This currently cover on OpenCore 0.7.7
@@ -48,7 +42,6 @@ UpdateSMBIOSMode set to Create
 4. `SetupVirtualMap`
 5. `RebuildAppleMemoryMap`
 6. `SyncRuntimePermissions`
-
 
 ## DeviceProperties
 ### Add
@@ -177,7 +170,7 @@ Ignore, we have native NVRAM
 ### Automatic `enabled`
 
 ### Generic
-Download [GenSMBIOS (opens new window)](https://github.com/corpnewt/GenSMBIOS), and open the *GenSMBIOS.command* with *Right-Click > Open*, follow the intructions on the Terminal Window.
+####Download [GenSMBIOS (opens new window)](https://github.com/corpnewt/GenSMBIOS), and open the *GenSMBIOS.command* with *Right-Click > Open*, follow the intructions on the Terminal Window.
 
 | Generic | Dictionary | Keys / Values |
 |:--- |:---:|:--- |
@@ -187,7 +180,7 @@ Download [GenSMBIOS (opens new window)](https://github.com/corpnewt/GenSMBIOS), 
 | ProcessorType | Number | 0 |
 | ROM | DATA | *[Your own MAC Address](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#derive-the-corresponding-rom-value)* |
 | SpoofVendor | Boolean | True |
-| SystemProductName | String | MacBookPro15,3 |
+| SystemProductName | String | MacBookPro15,2 |
 | SystemSerialNumber | String | *Generate your own with [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)* |
 | SystemUUID | String | *Generate your own with [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)* |
 
@@ -201,11 +194,11 @@ Download [GenSMBIOS (opens new window)](https://github.com/corpnewt/GenSMBIOS), 
 
 **UpdateSMBIOSMode `String` `Create`** 
 
-**Notes This config set it to `Custom`**
-
-*This will breaks Bootcamp compatibility But can boot in to windows from OC GUI without SMBIOS be Changed in windows*
-
 **UseRawUuidEncoding** `Boolean` `False`**
+
+####
+**Notes: after GenSMBIOS set it to `Custom`**
+This will breaks Bootcamp compatibility But can boot in to windows from OC GUI without SMBIOS be Changed in windows. (not confirm)
 
 ## UEFI
 ### ConnectDrivers `Boolean` `enabled`
