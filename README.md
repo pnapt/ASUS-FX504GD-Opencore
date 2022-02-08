@@ -7,7 +7,7 @@ my config of opencore to get macOS to boot on FX504 Laptop model
     <a href="https://github.com/pnapt/ASUS-FX504GD-Opencore/blob/main/OpenCore/ConfigExplain.md">
         <img src="https://img.shields.io/badge/How--To-Config-blue" /></a>
     <a href="https://github.com/pnapt/ASUS-FX504GD-Opencore/blob/main/OpenCore/README.md">
-        <img src="https://img.shields.io/badge/How--To-Post--Install-red" /></a>
+        <img src="https://img.shields.io/badge/Should--Read-Info--Guide-red" /></a>
 
 # How-to guide
 
