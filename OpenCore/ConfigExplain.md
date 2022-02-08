@@ -190,7 +190,7 @@ Download [GenSMBIOS (opens new window)](https://github.com/corpnewt/GenSMBIOS), 
 
 **UpdateSMBIOS `Boolean` `Enable`**
 
-**UpdateSMBIOSMode `String` `Create` ** 
+**UpdateSMBIOSMode `String` `Create`** 
 
 **Notes This config set it to `Custom`**
 
