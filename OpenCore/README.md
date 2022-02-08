@@ -1,5 +1,5 @@
 # Config.plist setup
-## [Here](ConfigExplain.md)
+[Here](ConfigExplain.md)
 PS : ***This not cover all the topic you should go read on dortania guide to understand it more***
 
 
