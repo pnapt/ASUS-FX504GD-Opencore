@@ -1,9 +1,13 @@
-# OC Config.plist
-
-- Base on 
+# ***Notes***
+## ConfigExplain.md is Based on 
    - https://github.com/PoomSmart/ASUS-FX504GE-Hackintosh/blob/master/OpenCore/README.md
-   - https://github.com/RobyRew/ASUS-FX504GE-Hackintosh_OpenCore/blob/master/Docs/config.plist.md
 
+   - https://github.com/RobyRew/ASUS-FX504GE-Hackintosh_OpenCore/blob/master/Docs/config.plist.md
+## ***always lookout on dortania guide first (If They have an update)***
+https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html#starting-point
+
+# OC Config.plist
+## This currently cover on OpenCore 0.7.7
 ## ACPI
 ### Add
 1. `SSDT-ALS0.aml` Ambient light(Maybe not needed)
@@ -96,6 +100,7 @@ force `IO80211Family.kext` from `System/Library/Extensions` to have complete sup
 5. `PowerTimeoutKernelPanic`
 **Disable:**
 1. `XhciPortLimit` (We don't need it on monterey and we also usb mapped)
+2. `CustomSMBIOSGuid` (This config set to true)
 
 ### Scheme
 **Enabled:**
@@ -105,7 +110,7 @@ force `IO80211Family.kext` from `System/Library/Extensions` to have complete sup
 ## Misc
 ### Boot
 1. `PickerAttributes 17`
-look for more info in dortania guide.
+more info in dortania guide.
 
 ### Debug
 **Enabled:**
@@ -185,7 +190,11 @@ Download [GenSMBIOS (opens new window)](https://github.com/corpnewt/GenSMBIOS), 
 
 **UpdateSMBIOS `Boolean` `Enable`**
 
-**UpdateSMBIOSMode `String` `Custom`**
+**UpdateSMBIOSMode `String` `Create` ** 
+
+**Notes This config set it to `Custom`**
+
+*This will breaks Bootcamp compatibility But can boot in to windows from OC GUI without SMBIOS be Changed in windows*
 
 **UseRawUuidEncoding** `Boolean` `False`**
 
@@ -196,15 +205,16 @@ Download [GenSMBIOS (opens new window)](https://github.com/corpnewt/GenSMBIOS), 
 Leave everything default
 
 ### Audio
-AudioDevice PciRoot(0x0)/Pci(0x1F,0x3)
-PlayChime Enable
-AudioSupport Enable
-### Drivers (must-have)
-1. `OpenRuntime.efi`
+#### If you want bootchime //If you don't Ignore
+1. `AudioDevice PciRoot(0x0)/Pci(0x1F,0x3)` For bootchime
+2. `PlayChime Enable` For bootchime
+3. `AudioSupport Enable` For bootchime
+### Drivers
+#### Must have // Order is not fixed
+1. `AudioDxe.efi`
 2. `HFsPlus.efi`
 3. `OpenCanopy.efi`
-4. `AudioDxe.efi`
-
+4. `OpenRuntime.efi`
 
 ### Input
 Ignore
