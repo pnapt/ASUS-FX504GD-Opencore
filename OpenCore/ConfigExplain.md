@@ -170,7 +170,8 @@ Ignore, we have native NVRAM
 ### Automatic `enabled`
 
 ### Generic
-####Download [GenSMBIOS (opens new window)](https://github.com/corpnewt/GenSMBIOS), and open the *GenSMBIOS.command* with *Right-Click > Open*, follow the intructions on the Terminal Window.
+#### Download [GenSMBIOS (opens new window)](https://github.com/corpnewt/GenSMBIOS) 
+and open the *GenSMBIOS.command* with *Right-Click > Open*, follow the intructions on the Terminal Window.
 
 | Generic | Dictionary | Keys / Values |
 |:--- |:---:|:--- |
@@ -196,7 +197,6 @@ Ignore, we have native NVRAM
 
 **UseRawUuidEncoding** `Boolean` `False`**
 
-####
 **Notes: after GenSMBIOS set it to `Custom`**
 This will breaks Bootcamp compatibility But can boot in to windows from OC GUI without SMBIOS be Changed in windows. (not confirm)
 
