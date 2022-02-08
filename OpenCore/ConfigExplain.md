@@ -4,10 +4,7 @@
 
    - https://github.com/RobyRew/ASUS-FX504GE-Hackintosh_OpenCore/blob/master/Docs/config.plist.md
 ## ***always lookout on dortania guide first (If They have an update)***
-https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html#starting-point
-
-
-
+- https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html#starting-point
 
 # OC Config.plist
 ## This currently cover on OpenCore 0.7.8
@@ -177,7 +174,7 @@ Ignore, we have native NVRAM
 
 ### Generic
 #### Download [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) 
-
+**Make sure to generate your own SMBIOS**
 | Generic | Dictionary | Keys / Values |
 |:--- |:---:|:--- |
 | AdviseWindows  | Boolean | False |
@@ -190,20 +187,19 @@ Ignore, we have native NVRAM
 | SystemSerialNumber | String | *Generate your own with [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)* |
 | SystemUUID | String | *Generate your own with [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)* |
 
-**These values are masked from the provided config file, make sure you enter your own before testing!**
+- UpdateDataHub `Boolean` `Enable`
 
-**UpdateDataHub `Boolean` `Enable`**
+- UpdateNVRAM `Boolean` `Enable`
 
-**UpdateNVRAM `Boolean` `Enable`**
+- UpdateSMBIOS `Boolean` `Enable`
 
-**UpdateSMBIOS `Boolean` `Enable`**
+- UpdateSMBIOSMode `String` `Create`
 
-**UpdateSMBIOSMode `String` `Create`** 
+- UseRawUuidEncoding** `Boolean` `False`
 
-**UseRawUuidEncoding** `Boolean` `False`**
+- **Notes: after GenSMBIOS set it to `Custom`**
 
-**Notes: after GenSMBIOS set it to `Custom`**
-This will breaks Bootcamp compatibility But can boot in to windows from OC GUI without SMBIOS be Changed in windows. (not confirm)
+   -This will breaks Bootcamp compatibility But can boot in to windows from OC GUI without SMBIOS be Changed in windows. (not confirm)
 
 ## UEFI
 ### ConnectDrivers `Boolean` `enabled`
@@ -216,6 +212,7 @@ Leave everything default
 1. `AudioDevice PciRoot(0x0)/Pci(0x1F,0x3)` For bootchime
 2. `PlayChime Enable` For bootchime
 3. `AudioSupport Enable` For bootchime
+
 ### Drivers
 #### Must have // Order is not fixed
 1. `AudioDxe.efi`
