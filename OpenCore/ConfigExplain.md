@@ -150,7 +150,7 @@ Remove from `EFI/OC/Tools` everything
    - `-v keepsyms=1 debug=0x100` (Debuging)
    - `alcid=31` (Sets de audio to port 31)
    - `-wegnoegpu` (Disable dGPU )
-   - `-igfxblr` (Fix Backlight issue on Coffe Lake laptops)
+   - `-igfxblr` (Fix Backlight issue on Coffe Lake laptops//we don't need it. Beacuse already have enable-backlight-registers-fix in device prop)
    - `agdpmod=vit9696` (Disable board-id checker **ESSENTIAL FOR HDMI OUTPUT**)
 - `run-efi-updater` (Disable macOS updates to EFI)
 - `csr-active-config` (SIP configuration (Enabled), For more: [Disabling SIP](https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/extended/post-issues.html#disabling-sip))
@@ -205,7 +205,7 @@ Download [GenSMBIOS (opens new window)](https://github.com/corpnewt/GenSMBIOS), 
 Leave everything default
 
 ### Audio
-#### If you want bootchime //If you don't Ignore
+#### If you want bootchime //If you don't want just Ignore.
 1. `AudioDevice PciRoot(0x0)/Pci(0x1F,0x3)` For bootchime
 2. `PlayChime Enable` For bootchime
 3. `AudioSupport Enable` For bootchime
