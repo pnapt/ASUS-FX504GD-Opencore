@@ -26,28 +26,22 @@ openssl req -new -x509 -newkey rsa:4096 -sha256 -days 365 -subj "/CN=ASUSFX504 E
 ```
 
 ```sh
-openssl req -new -x509 -newkey rsa:4096 -sha256 -days 365 -subj "/CN=ASUSFX504 Image Signing Key" -keyout ~/sign/ISK.key -out ~/sign/ISK.pem
+openssl req -new -x509 -newkey rsa:4096 -sha256 -days 365 -subj "/CN=ASUSFX504 Image Signing Key" -keyout ISK.key -out ISK.pem
 ```
 
 ```sh
 ./cert-to-efi-sig-list -g "$(uuidgen)" PK.pem PK.esl
 ./cert-to-efi-sig-list -g "$(uuidgen)" KEK.pem KEK.esl
-./cert-to-efi-sig-list -g "$(uuidgen)" ~/sign/ISK.pem ISK.esl
+./cert-to-efi-sig-list -g "$(uuidgen)" ISK.pem ISK.esl
 ```
 
 ```sh
 wget https://www.dropbox.com/s/un9q4ryu9il0ynd/MicWinProPCA2011_2011-10-19.crt?dl=1 -O MicWinProPCA2011_2011-10-19.crt
-```
-
-```sh
 wget https://www.dropbox.com/s/qwbi3gk7h9qc716/MicCorUEFCA2011_2011-06-27.crt?dl=1 -O MicCorUEFCA2011_2011-06-27.crt
 ```
 
 ```sh
 openssl x509 -in MicWinProPCA2011_2011-10-19.crt -inform DER -out MsWin.pem -outform PEM
-```
-
-```sh
 openssl x509 -in MicCorUEFCA2011_2011-06-27.crt -inform DER -out UEFI.pem -outform PEM
 ```
 
