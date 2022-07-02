@@ -67,6 +67,7 @@ sbsign --key ~/sign/ISK.key --cert ~/sign/ISK.pem HfsPlus.efi
 sbsign --key ~/sign/ISK.key --cert ~/sign/ISK.pem OpenCanopy.efi
 sbsign --key ~/sign/ISK.key --cert ~/sign/ISK.pem OpenCore.efi
 sbsign --key ~/sign/ISK.key --cert ~/sign/ISK.pem OpenRuntime.efi
+sbsign --key ~/sign/ISK.key --cert ~/sign/ISK.pem ResetNvramEntry.efi
 rm -rf *.efi && cd .. && mv OC .. && cd .. &&  zip -r OC.zip OC
 cloudshell download OC.zip
 
