@@ -1,9 +1,9 @@
 # ASUS-FX504GD-Opencore
 my config of opencore to get macOS to boot on FX504 Laptop model
 
-<p align="center">
+<p align="left">
     <a href="https://github.com/pnapt/ASUS-FX504GD-Opencore/releases">
-        <img src="https://img.shields.io/badge/Latest%20Release-0.7.8-green" /></a>
+        <img src="https://img.shields.io/badge/Latest%20Release-0.8.1-green" /></a>
     <a href="https://github.com/pnapt/ASUS-FX504GD-Opencore/releases">
         <img src="https://img.shields.io/badge/Latest%20Build-Download-green" /></a>
     <a href="https://github.com/pnapt/ASUS-FX504GD-Opencore/blob/main/OpenCore/README.md">
@@ -27,8 +27,7 @@ __Notes__
 - Windows EFI on SSD & Install windows on ssd
 
 __My laptop issue__
-- Webcam not working even in windows so i can't test it
-- Maybe HDMI too
+- Maybe HDMI
 
 <img src="https://github.com/pnapt/ASUS-FX504GD-Opencore/blob/main/FX504-AboutThisMac.png"/>
 
@@ -73,10 +72,10 @@ __My laptop issue__
 
 **Can't Tests**
 - [ ] HDMI (It's works but not that fine)
-- [ ] Build-in Webcam (External Webcam works)
 
 **Not work**
 - [ ] dGPU (of course apple have ended support)
+    maybe will try to Build an implement ver. form OC legacy patcher
 
 ## Opencore Config Guide
 
@@ -104,6 +103,9 @@ __Previous People who build EFI for this laptop__
 
     - https://github.com/RobyRew
     Repo:https://github.com/RobyRew/ASUS-FX504GE-Hackintosh_OpenCore
+
+    - https://github.com/MegaStood
+    Repo:https://github.com/MegaStood/Hackintosh-FX504GE-ES72
 
     - https://github.com/dongcodebmt for way to fix combojack alc 255
     Repo:https://github.com/dongcodebmt/VX5-591G-OpenCore
