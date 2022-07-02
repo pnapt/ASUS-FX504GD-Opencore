@@ -30,15 +30,13 @@ Information will be here
 3. DVMT-Preallocated: 64MB
 
 # Post-Install
-- **Details Info on : https://dortania.github.io/OpenCore-Post-Install/**
+**Details Info on : https://dortania.github.io/OpenCore-Post-Install/**
 
-- **What need to be done after install macos**
-1. Generate you own SMBIOS (This config use `MacbookPro15,2` SMBIOS ) 
-
+## What need to be done after install macos
+### 1. Generate you own SMBIOS (This config use `MacbookPro15,2` SMBIOS ) 
 - Notes :If you change to something else you need to change in USBMap.kext too
 
-2. Install Combojack Switcher https://github.com/hackintosh-stuff/ComboJack
-
+### 2. Install Combojack Switcher https://github.com/hackintosh-stuff/ComboJack
 **How-to Install Combojack switcher**
 - Follow Full instruction on [Here](https://github.com/hackintosh-stuff/ComboJack)
 
@@ -56,8 +54,14 @@ Information will be here
 
   - 5. Try plug-in your headphone If you get prompt , Then patch is working enjoy
 
-**Nice tools that should try**
-- OCAuxiliaryTools https://github.com/ic005k/OCAuxiliaryTools
+## Enable Secureboot
+<p align="left">
+    <a href="https://github.com/pnapt/ASUS-FX504GD-Opencore/blob/main/OpenCore/Doc/Sign-Command.md">
+        <img src="https://img.shields.io/badge/How%20to-SecureBoot-red" /></a>
+# Misc
 
-**Misc Fixes**
+ **Nice tools that you should try**
+- OCAuxiliaryTools-CrossPlatform Plist edit tools: https://github.com/ic005k/OCAuxiliaryTools
+
+**Fixes**
 - Fix Dualboot timezone: https://www.tonymacx86.com/threads/fix-incorrect-time-in-windows-osx-dual-boot.133719/
