@@ -58,7 +58,8 @@ Information will be here
 <p align="left">
     <a href="https://github.com/pnapt/ASUS-FX504GD-Opencore/blob/main/OpenCore/Doc/Sign-Command.md">
         <img src="https://img.shields.io/badge/How%20to-SecureBoot-red" /></a>
-# Misc
+
+ # Misc
 
  **Nice tools that you should try**
 - OCAuxiliaryTools-CrossPlatform Plist edit tools: https://github.com/ic005k/OCAuxiliaryTools
