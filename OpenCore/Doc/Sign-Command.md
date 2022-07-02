@@ -61,7 +61,7 @@ cat ISK.esl MsWin.esl UEFI.esl > db.esl
 mkdir OC
 git clone https://github.com/pnapt/ASUS-FX504GD-Opencore.git && cd ASUS-FX504GD-Opencore
 cp Drivers/* OpenCore.efi ../OC && cd ..
-sbsign --key ~/sign/ISK.key --cert ~/sign/ISK.pem BOOTx64
+sbsign --key ~/sign/ISK.key --cert ~/sign/ISK.pem BOOTx64.efi
 sbsign --key ~/sign/ISK.key --cert ~/sign/ISK.pem AudioDxe.efi
 sbsign --key ~/sign/ISK.key --cert ~/sign/ISK.pem HfsPlus.efi
 sbsign --key ~/sign/ISK.key --cert ~/sign/ISK.pem OpenCanopy.efi
