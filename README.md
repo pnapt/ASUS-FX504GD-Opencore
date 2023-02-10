@@ -1,5 +1,9 @@
 # ASUS-FX504GD-Opencore
-my config of opencore to get macOS to boot on FX504 Laptop model
+(my config of opencore to get macOS to boot on FX504 Laptop model)
+- Important Notes:
+This Repo will not be maintain for normal user anymore
+Due to My laptop screen broke off , I repurpose it as a mini PC
+The config will be for HDMI main display & smbios is Macmini8,1
 
 <p align="left">
     <a href="https://github.com/pnapt/ASUS-FX504GD-Opencore/releases">
@@ -18,9 +22,6 @@ my config of opencore to get macOS to boot on FX504 Laptop model
 # Info
 > Old Repository
     https://github.com/pnapt/FX504-Build-OC
-
-> Archive EFI 
-    https://drive.google.com/drive/folders/1PhjAvpW_ok6pH14waik0sjYFQl8xssbo
 
 __Notes__
 - Opencore EFI on HDD & Install macOS on ssd
